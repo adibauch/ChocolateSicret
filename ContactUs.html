@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר</title>
+    <meta name="description" content="דף צור קשר אתר סוד השוקולד" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Adi Baruch, Michal Grinbank" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="icon" href="./img/logo.png" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+  <body>
+    <header>
+      <nav aria-label="mainNav" class="navbar">
+        <div class="container">
+          <a id="logo" href="ChocolateSicret.html"
+            ><img id="logo-image" src="./img/logo.png" alt="לוגו"
+          /></a>
+          <ul>
+            <li><a href="ChocolateSicret.html">עמוד בית</a></li>
+            <li>
+              <a href="AboutChocolate.html" class="notActive">היסטוריה</a>
+            </li>
+            <li><a href="Dark.html" class="notActive">שוקולד מריר</a></li>
+            <li><a href="Milk.html">שוקולד חלב</a></li>
+            <li><a href="White.html">שוקולד לבן</a></li>
+            <li><a href="Rubi.html" class="notActive">שוקולד רובי</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav aria-label="breadCrumbNav">
+        <ol class="breadCrumb">
+          <li><a href="ChocolateSicret.html">עמוד בית</a></li>
+          <li>צור קשר</li>
+        </ol>
+      </nav>
+      <div class="inTitle">
+        <h1><span class="titlePrimary">צור</span> קשר</h1>
+      </div>
+    </header>
+
+    <section id="contact-form" class="py-3">
+      <div class="container">
+        <h2>השאירו פרטים והציעו לנו רעיונות חדשים</h2>
+        <form action="process.php">
+          <input
+            type="hidden"
+            id="myEmail"
+            name="sendForm"
+            value="adibaruch11@gmail.com"
+          />
+
+          <h2>פרטים אישיים</h2>
+          <label for="userID">
+            תעודת זהות*<br />
+            <input
+              type="text"
+              class="form-group"
+              id="userID"
+              placeholder="נא להקליד 9 ספרות"
+              required
+            />
+          </label>
+          <label for="firstNameHe" class="form-group">
+            שם פרטי*<br />
+            <input type="text" id="firstNameHe" required />
+          </label>
+          <label for="lastNameHe" class="form-group">
+            שם משפחה*<br />
+            <input type="text" id="lastNameHe" required />
+          </label>
+          מין
+          <br />
+          <div class="gender-container">
+            <label for="male">זכר</label>
+            <input id="male" type="radio" name="gender" value="male" />
+          </div>
+          <div class="gender-container">
+            <label for="female">נקבה</label>
+            <input id="female" type="radio" name="gender" value="female" />
+          </div>
+          <br />
+          <label for="phoneNumber">
+            טלפון נייד*<br />
+            <input type="text" class="form-group" id="phoneNumber" required />
+          </label>
+          <label for="email">
+            דואר אלקטרוני*<br />
+            <input type="email" class="form-group" required />
+          </label>
+
+          <h2>ספרו לנו</h2>
+          שוקולד מועדף<br />
+          <select class="form-group" id="programName">
+            <option disabled selected value>-- נא לבחור ערך --</option>
+            <option value="option 1">שוקולד מריר</option>
+            <option value="option 2">שוקולד חלב</option>
+            <option value="option 3">שוקולד לבן</option>
+            <option value="option 4">שוקולד רובי</option>
+          </select>
+          <label for="personalInfo">
+            עובדות מעניינות שכשדאי לנו להוסיף לאתר <br />
+            <textarea id="personalInfo" class="form-group" rows="5"></textarea>
+          </label>
+          <label for="submit">
+            <input type="submit" class="btn" value="שלחו" /><br />
+          </label>
+          <div id="feedback"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <nav aria-label="footerNav" class="navbar">
+        <ul>
+          <li><a href="About.html">אודות</a></li>
+          <li><a href="SiteMap.html">מפת האתר</a></li>
+          <li><a href="ContactUs.html">צור קשר</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

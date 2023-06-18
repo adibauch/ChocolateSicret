@@ -1,0 +1,354 @@
+﻿/* כללי */
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+ 
+body {
+    font-family: Heebo, Arial;
+    line-height: 1.7;
+    direction: rtl;
+    margin: 0 auto;
+    background-color: #f4f0e0;
+    color: #45302c;
+    width: 1280px;
+}
+
+a {
+    color: #82665c;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+.container {
+    margin: auto;
+    width: 1100px;
+    padding: 0px 20px 23px 20px;
+}
+
+/*כפתורים*/
+.btn, .btn-white {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background-color: #82665c;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light {
+    background-color: #f4f4f4;
+    color: #82665c;
+}
+
+.btn-white:hover {
+    background-color: #f4f0e0;
+    color: #82665c;
+}
+
+.btn:hover {
+    background-color: #eebeb9;
+    color: #82665c;
+}
+
+.notActive {
+    cursor: not-allowed;
+}
+
+/* תפריט ניווט */
+.navbar {
+    background-color: #82665c;
+    height: 70px;
+}
+
+#logo-image {
+    width: 55px;
+    height: auto;
+    margin-left: 10px;
+    margin-top:7px;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar ul {
+    list-style: none;
+    float: right;
+}
+
+    .navbar ul li {
+        padding-right: 65px;
+        float: right;
+    }
+
+        .navbar ul li a {
+            display: inline-block;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+            .navbar ul li a:hover {
+                background-color: #6d4c46;
+                color: #eebeb9;
+            }
+
+
+/* תפריט פירורי לחם */
+nav ol li {
+    display: inline-block;
+}
+
+    nav ol li:after {
+        content: ">";
+    }
+
+    nav ol li:last-child:after {
+        content: "";
+    }
+
+/* דף נחיתה -עמוד בית */
+
+#wellcome {
+    background: url("../img/chocolate background.jpg") no-repeat center;
+    height: 550px;
+}
+
+    #wellcome .wellcome-content {
+        color: white;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 20px;
+    }
+
+        #wellcome .wellcome-content h1 {
+            font-size: 80px;
+            line-height: 1.2;
+        }
+
+#subTitie {
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* עמוד הבית- תוכן היסטוריה */
+
+#home-info {
+    height: 450px;
+}
+
+    #home-info .info-img {
+        float: left;
+        width: 50%;
+        background: url("../img/chocolate_realistic.jpg") center no-repeat;
+        height: 100%;
+    }
+
+    #home-info .info-content {
+        float: right;
+        width: 45.3%;
+        height: 86.6%;
+        text-align: center;
+        padding: 30px 30px;
+        background-color: #82666e;
+        color: white;
+    }
+
+        #home-info .info-content p {
+            padding-bottom: 30px;
+        }
+
+.info-content h2 {
+    padding-top: 35px;
+}
+
+/* עמוד הבית תוכן- 4 סוגים */
+.box {
+    float: right;
+    width: 21.875%;
+    text-align: center;
+    padding: 20px;
+}
+
+#dark {
+    background-color: #45302c;
+    color: #f4f0e0;
+}
+
+#milk {
+    background-color: #855949;
+    color: #eebeb9;
+}
+
+#white {
+    background-color: #f4f0e0;
+    color: #45302c;
+}
+
+#rubi {
+    background-color: #eebeb9;
+}
+
+/* עמודים פנימיים*/
+
+.titlePrimary { /* חלוקה לצבעים כותרות דפים פנימיים*/
+    color: #eebeb9;
+}
+
+.inTitle h1 { /*כותרות דפים פנימיים*/
+    font-size: 60px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    color: #82665c;
+}
+#photo {
+    float: left;
+    width:350px;
+    height:auto;
+}
+
+#hit { /*לוגו HIT עמוד אודות*/
+    width: 200px;
+    height: auto;
+}
+/* גלריה*/
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+.galleryPicture {
+    height: 450px;
+}
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    color: #45302c;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-user-select: none;
+}
+
+.next {
+    left: 100%;
+}
+
+.previous {
+    right: 100%;
+}
+
+    .previous:hover, .next:hover, .numImg {
+        background-color: #45302c;
+        color: #eebeb9;
+    }
+
+.numImg {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #45302c;
+    padding: 0.5vh 0px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: right;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+    width: 100%;
+}
+
+    .active, .demo:hover {
+        opacity: 1;
+    }
+
+/* עמוד צור קשר */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+    #contact-form input:focus,#contact-form textarea:focus {
+        border-color: #eebeb9;
+    }
+
+    .gender-container {
+        display: flex;
+        width: 70px;
+      }
+
+        .gender-container input[type="radio"] {
+            width: 15px;
+            height: 15px;
+        }
+      
+      .gender-container label {
+        margin-left: 5px; 
+      }
+      
+      
+/* פוטר */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #82665c;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#map{
+    height:278px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer li {
+        margin: 0 10px;
+    }
