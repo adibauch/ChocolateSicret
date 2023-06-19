@@ -1,6 +1,6 @@
 ﻿/* כללי */
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
- 
+
 body {
     font-family: Heebo, Arial;
     line-height: 1.7;
@@ -66,7 +66,7 @@ p {
     width: 55px;
     height: auto;
     margin-left: 10px;
-    margin-top:7px;
+    margin-top: 7px;
     float: right;
     font-weight: bold;
     font-size: 25px;
@@ -203,10 +203,11 @@ nav ol li {
     text-align: center;
     color: #82665c;
 }
+
 #photo {
     float: left;
-    width:350px;
-    height:auto;
+    width: 350px;
+    height: auto;
 }
 
 #hit { /*לוגו HIT עמוד אודות*/
@@ -221,9 +222,11 @@ img {
 .container {
     position: relative;
 }
+
 .galleryPicture {
     height: 450px;
 }
+
 .mySlides {
     display: none;
 }
@@ -299,7 +302,7 @@ img {
     margin-bottom: 5px;
 }
 
-#contact-form input,#contact-form textarea {
+#contact-form input, #contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px #ddd solid;
@@ -309,25 +312,25 @@ img {
     height: 200px;
 }
 
-    #contact-form input:focus,#contact-form textarea:focus {
+    #contact-form input:focus, #contact-form textarea:focus {
         border-color: #eebeb9;
     }
 
-    .gender-container {
-        display: flex;
-        width: 70px;
-      }
+.gender-container {
+    display: flex;
+    width: 70px;
+}
 
-        .gender-container input[type="radio"] {
-            width: 15px;
-            height: 15px;
-        }
-      
-      .gender-container label {
-        margin-left: 5px; 
-      }
-      
-      
+    .gender-container input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    .gender-container label {
+        margin-left: 5px;
+    }
+
+
 /* פוטר */
 footer {
     display: flex;
@@ -337,8 +340,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
-#map{
-    height:278px;
+
+#map {
+    height: 278px;
 }
 
 footer ul {
@@ -349,6 +353,6 @@ footer ul {
     align-items: center;
 }
 
-    footer li {
-        margin: 0 10px;
-    }
+footer li {
+    margin: 0 10px;
+}
